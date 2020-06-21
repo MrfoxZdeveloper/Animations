@@ -4,6 +4,10 @@ for _,v in next, game.ReplicatedStorage.GunModules:GetChildren() do
   local v2 = math.pi / 180;
   local l__Vector3_new__1 = Vector3.new;
   if e.type == "SHOTGUN" then
+   e.variablefirerate = false;
+
+    e.firemodes = {true};
+    e.requirechamber = false;
     e.animations = {
       spot = {
         stdtimescale = 0.5,
