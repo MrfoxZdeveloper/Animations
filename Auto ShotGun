@@ -1,4 +1,10 @@
-animations = {
+for _,v in next, game.ReplicatedStorage.GunModules:GetChildren() do
+  local e = require(v)
+  local v1 = {};
+		local v2 = math.pi / 180;
+		local l__Vector3_new__1 = Vector3.new;
+		if e.type == "SHOTGUN" then
+e.animations = {
 	spot = {
 		stdtimescale = 0.5, 
 		timescale = 0.5, 
@@ -502,3 +508,5 @@ animations = {
 		}
 	}
 };
+end
+end
