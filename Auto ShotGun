@@ -1,0 +1,504 @@
+animations = {
+	spot = {
+		stdtimescale = 0.5, 
+		timescale = 0.5, 
+		resettime = 0.3,
+		{
+			delay = 0.65,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-1.2, 0.2, 0.2) * CFrame.Angles(154 * v2, -16 * v2, 3 * v2), 
+				t = 0.6, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 0.5,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-1.1, -0.05, 0.1) * CFrame.Angles(100 * v2, -19 * v2, 6 * v2), 
+				t = 0.5, 
+				eq = "smooth"
+			}
+		}
+	}, 
+	inspect = {
+		stdtimescale = 0.5, 
+		timescale = 0.5, 
+		resettime = 0.5,
+		{
+			delay = 5,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.18, 0.15, -0.48) * CFrame.Angles(-12 * v2, 69 * v2, -23 * v2), 
+				pivot = l__Vector3_new__1(-1, 0, 0.5), 
+				t = 1.9, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = CFrame.new(-0.15, -0.64, -1.7) * CFrame.Angles(5 * v2, 44 * v2, 141 * v2), 
+				t = 1, 
+				eq = "smooth"
+			}, {
+				part = "rarm", 
+				c1 = CFrame.new(-0.11, -0.61, 1.27) * CFrame.Angles(111 * v2, 3 * v2, 14 * v2), 
+				t = 1.9, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 0.5,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.58, -0.04, -0.8) * CFrame.Angles(7 * v2, 25 * v2, 81 * v2), 
+				pivot = l__Vector3_new__1(0, 0, 0), 
+				t = 2, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = CFrame.new(-0.9, -0, -0.8) * CFrame.Angles(108 * v2, -16 * v2, 47 * v2), 
+				pivot = l__Vector3_new__1(0, -1, -0.5), 
+				t = 2, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 5,
+			{
+				part = "rarm", 
+				c1 = CFrame.new(-0.04, -0.41, 1.47) * CFrame.Angles(104 * v2, -2 * v2, 1 * v2), 
+				t = 1.5, 
+				eq = "smooth"
+			}
+		}
+	}, 
+	parkour = {
+		stdtimescale = 0.5, 
+		timescale = 0.5, 
+		resettime = 0.01,
+		{
+			delay = 0.5,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(0.6, 0.3, 0.05) * CFrame.Angles(14 * v2, -13 * v2, -5 * v2), 
+				t = 0.5, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = CFrame.new(-1.11, -1.62, 0.87) * CFrame.Angles(46 * v2, -1 * v2, -15 * v2), 
+				t = 0.3, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 1,
+			{
+				part = "Trigger", 
+				c1 = "base", 
+				t = 0.9, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = "base", 
+				t = 1, 
+				eq = "smooth"
+			}
+		}
+	}, 
+	pullbolt = {
+		stdtimescale = 0, 
+		timescale = 0, 
+		resettime = 0,
+		{
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, -0.04, -0.01) * CFrame.Angles(0 * v2, 5 * v2, 32 * v2), 
+				t = 0.8, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = "base", 
+				t = 0.8, 
+				eq = "smooth"
+			}, {
+				part = "rarm", 
+				c1 = "base", 
+				t = 0.8, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.4, -0.2, -0.5) * CFrame.Angles(95 * v2, 0 * v2, 20 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = CFrame.new(0, 0.22, -1.13) * CFrame.Angles(89 * v2, 90 * v2, -89 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935523", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}, {
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, 0.04, 0.07) * CFrame.Angles(10 * v2, 15 * v2, 32 * v2), 
+				t = 0.5, 
+				eq = { 0, 5, 0.6, -0.3 }
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935599", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}
+	}, 
+	onfire = {
+		stdtimescale = 0, 
+		timescale = 0, 
+		resettime = 0,
+		{
+			delay = 0
+		}, {
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, -0.04, -0.01) * CFrame.Angles(0 * v2, 5 * v2, 32 * v2), 
+				t = 0.4, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.4, -0.2, -0.5) * CFrame.Angles(95 * v2, 0 * v2, 20 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = CFrame.new(0, 0.22, -1.13) * CFrame.Angles(89 * v2, 90 * v2, -89 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935523", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}, {
+			delay = 0,
+			{
+				part = "Mag", 
+				clone = "dropmag", 
+				transparency = 1
+			}, {
+				part = "dropmag", 
+				transparency = 0, 
+				c1 = CFrame.new(0.76, 0.05, -0.78) * CFrame.Angles(-30 * v2, 38 * v2, -3 * v2), 
+				t = 0.11,
+				"accelerate"
+			}, {
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, 0.04, 0.07) * CFrame.Angles(10 * v2, 15 * v2, 32 * v2), 
+				t = 0.5, 
+				eq = { 0, 5, 0.6, -0.3 }
+			}
+		}, {
+			delay = 0,
+			{
+				part = "dropmag", 
+				drop = true
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935599", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}
+	}, 
+	pump = {
+		stdtimescale = 0, 
+		timescale = 0, 
+		resettime = 0,
+		{
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, -0.04, -0.01) * CFrame.Angles(0 * v2, 5 * v2, 32 * v2), 
+				t = 0.8, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = "base", 
+				t = 0.8, 
+				eq = "smooth"
+			}, {
+				part = "rarm", 
+				c1 = "base", 
+				t = 0.8, 
+				eq = "smooth"
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.4, -0.2, -0.5) * CFrame.Angles(95 * v2, 0 * v2, 20 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = CFrame.new(0, 0.22, -1.13) * CFrame.Angles(89 * v2, 90 * v2, -89 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935523", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}, {
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(-0.23, 0.04, 0.07) * CFrame.Angles(10 * v2, 15 * v2, 32 * v2), 
+				t = 0.5, 
+				eq = { 0, 5, 0.6, -0.3 }
+			}
+		}, {
+			delay = 0,
+			{
+				part = "larm", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Bolt", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935599", 
+				p = 1, 
+				v = 1, 
+				tp = 0, 
+				d = 2
+			}
+		}, {
+			delay = 0,
+			{
+				part = "Trigger", 
+				c1 = "base", 
+				t = 0.4, 
+				eq = "smooth"
+			}
+		}
+	}, 
+	tacticalreload = {
+		stdtimescale = 0.5, 
+		timescale = 0.45,
+		{
+			delay = 0.8,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(0.07, -0.08, -0.18) * CFrame.Angles(36 * v2, -8 * v2, -10 * v2), 
+				t = 1.2, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = CFrame.new(-1.13, -0.68, 1.1) * CFrame.Angles(32 * v2, -18 * v2, 35 * v2), 
+				t = 1, 
+				eq = "accelerate"
+			}, {
+				part = "rarm", 
+				c1 = CFrame.new(0.17, -0.2, 0.91) * CFrame.Angles(90 * v2, 0 * v2, -5 * v2), 
+				t = 0.7, 
+				eq = "smooth"
+			}, {
+				part = "Mag", 
+				transparency = 1, 
+				c1 = CFrame.new(-0.16, -0.82, 0.07) * CFrame.Angles(93 * v2, 84 * v2, -17 * v2), 
+				t = 0.1
+			}
+		}, {
+			delay = 0.1,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.31, -1.16, 1.1) * CFrame.Angles(90 * v2, 24 * v2, 8 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}
+		}, {
+			delay = 0.55,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.17, -0.75, 0.48) * CFrame.Angles(119 * v2, 16 * v2, 13 * v2), 
+				t = 0.6, 
+				eq = "decelerate"
+			}, {
+				part = "Mag", 
+				c1 = CFrame.new(0.01, 0, -0.27) * CFrame.Angles(236 * v2, 88 * v2, -122 * v2), 
+				transparency = 0, 
+				t = 0.6, 
+				eq = "decelerate"
+			}
+		}, {
+			delay = 0.1,
+			{
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935691", 
+				p = 1, 
+				v = 1, 
+				tp = 0
+			}
+		}, {
+			delay = 0.2,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.21, -0.54, 0.45) * CFrame.Angles(106 * v2, 13 * v2, 16 * v2), 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Mag", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}
+		}, {
+			delay = 0.4,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(0.1, 0.05, -0.14) * CFrame.Angles(50 * v2, -15 * v2, -9 * v2), 
+				t = 0.5, 
+				eq = { 0, 4, 0.8, 0 }
+			}
+		}
+	}, 
+	reload = {
+		stdtimescale = 0.5, 
+		timescale = 0.45,
+		{
+			delay = 0.6,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(0.07, -0.08, -0.18) * CFrame.Angles(36 * v2, -8 * v2, -10 * v2), 
+				t = 1.2, 
+				eq = "smooth"
+			}, {
+				part = "larm", 
+				c1 = CFrame.new(-1.13, -0.68, 1.1) * CFrame.Angles(32 * v2, -18 * v2, 35 * v2), 
+				t = 0.6, 
+				eq = "accelerate"
+			}, {
+				part = "rarm", 
+				c1 = CFrame.new(0.17, -0.2, 0.91) * CFrame.Angles(90 * v2, 0 * v2, -5 * v2), 
+				t = 0.6, 
+				eq = "smooth"
+			}, {
+				part = "Mag", 
+				transparency = 1, 
+				c1 = CFrame.new(-0.16, -0.82, 0.07) * CFrame.Angles(93 * v2, 84 * v2, -17 * v2), 
+				t = 0.1
+			}
+		}, {
+			delay = 0.1,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.31, -1.16, 1.1) * CFrame.Angles(90 * v2, 24 * v2, 8 * v2), 
+				t = 0.1, 
+				eq = "accelerate"
+			}
+		}, {
+			delay = 0.55,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.17, -0.75, 0.48) * CFrame.Angles(119 * v2, 16 * v2, 13 * v2), 
+				t = 0.6, 
+				eq = "decelerate"
+			}, {
+				part = "Mag", 
+				c1 = CFrame.new(0.01, 0, -0.27) * CFrame.Angles(236 * v2, 88 * v2, -122 * v2), 
+				transparency = 0, 
+				t = 0.6, 
+				eq = "decelerate"
+			}
+		}, {
+			delay = 0.1,
+			{
+				part = "Flame", 
+				sound = true, 
+				soundid = "http://roblox.com/asset/?id=631935691", 
+				p = 1, 
+				v = 1, 
+				tp = 0
+			}
+		}, {
+			delay = 0.2,
+			{
+				part = "larm", 
+				c1 = CFrame.new(-0.21, -0.54, 0.45) * CFrame.Angles(106 * v2, 13 * v2, 16 * v2), 
+				t = 0.2, 
+				eq = "accelerate"
+			}, {
+				part = "Mag", 
+				c1 = "base", 
+				t = 0.2, 
+				eq = "accelerate"
+			}
+		}, {
+			delay = 0.4,
+			{
+				part = "Trigger", 
+				c1 = CFrame.new(0.1, 0.05, -0.14) * CFrame.Angles(50 * v2, -15 * v2, -9 * v2), 
+				t = 0.5, 
+				eq = { 0, 4, 0.8, 0 }
+			}
+		}
+	}
+};
